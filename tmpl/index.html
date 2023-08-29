@@ -1,0 +1,71 @@
+{{template "header"}}
+
+<h2 class="text-xl font-bold pb-2">What have you done this week?</h1>
+
+<form action="/api/post" method="POST" class="sm:max-w-lg">
+    <textarea name="content" class="w-full h-32 p-2 border border-gray-300 rounded-xl" placeholder="This week I..."></textarea>
+    <div class="text-right">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl mt-2">Post</button>
+    </div>
+</form>
+
+<p class="mt-2 prose">Having trouble figuring out what to write? Check out <a href="/help">how snippets work</a>.</p>
+
+<h2 class="text-xl font-bold pb-2 pt-4">Recent posts</h1>
+
+<div class="grid grid-flow-col md:grid-flow-row grid-cols-3">
+    <div class="bg-gray-100 max-w-full rounded-xl m-2 shadow-md">
+        <div class="flex flex-row items-center px-4 py-2">
+            <img src="https://www.gravatar.com/avatar/12f6bb1941df66b8f138a446d4e86702" class="w-8 h-8 rounded-full" />
+            <div class="ml-2">
+                <div class="font-bold">Afnarei</div>
+                <div class="text-sm text-gray-600">2 days ago</div>
+            </div>
+        </div>
+        <div class="px-4 py-2 prose">
+            <p>Vice plaid hot chicken adaptogen kogi. Glossier semiotics cliche lomo hashtag iceland listicle offal. Copper mug ethical paleo cred. Roof party banjo chia PBR&B, seitan leggings church-key direct trade hell of jawn ugh synth selfies organic.</p>
+            <p>Pickled marxism sriracha copper mug pop-up JOMO quinoa vexillologist try-hard mixtape. Pabst copper mug celiac seitan. Intelligentsia farm-to-table paleo taxidermy hexagon. Sus mlkshk biodiesel vinyl green juice prism cardigan squid lomo sriracha narwhal tumeric ethical. Ennui synth craft beer iceland sus bruh.</p>
+        </div>
+        <div class="my-auto"></div>
+        <div class="px-4 py-2">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl">Like</button> <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl">Link</button>
+        </div>
+    </div>
+
+    <div class="bg-gray-100 max-w-full rounded-xl m-2 shadow-md">
+        <div class="flex flex-row items-center px-4 py-2">
+            <img src="https://www.gravatar.com/avatar/56fde3fe451102e83273cc3aa26adb48" class="w-8 h-8 rounded-full" />
+            <div class="ml-2">
+                <div class="font-bold">Zaidoris</div>
+                <div class="text-sm text-gray-600">3 days ago</div>
+            </div>
+        </div>
+        <div class="px-4 py-2 prose">
+            <p>Cold-pressed polaroid waistcoat mukbang enamel pin readymade pork belly. Neutra put a bird on it pinterest enamel pin marxism banjo fam readymade ramps deep v heirloom jean shorts. Tonx readymade kinfolk helvetica 8-bit yes plz williamsburg gentrify semiotics heirloom DSA. Before they sold out crucifix squid celiac woke raw denim, praxis readymade succulents meggings you probably haven't heard of them hot chicken beard shoreditch food truck. Subway tile craft beer lumbersexual vaporware thundercats bitters.</p>
+        </div>
+        <div class="my-auto"></div>
+        <div class="px-4 py-2">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl">Like</button> <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl">Link</button>
+        </div>
+    </div>
+
+    <div class="bg-gray-100 max-w-full rounded-xl m-2 shadow-md">
+        <div class="flex flex-row items-center px-4 py-2">
+            <img src="https://www.gravatar.com/avatar/a90b29deef5c649ca49e7410577db17f" class="w-8 h-8 rounded-full" />
+            <div class="ml-2">
+                <div class="font-bold">Thagwen</div>
+                <div class="text-sm text-gray-600">3 days ago</div>
+            </div>
+        </div>
+        <div class="px-4 py-2 prose">
+            <p>I'm baby everyday carry lomo vape lumbersexual VHS. Food truck irony unicorn chambray post-ironic shabby chic deep v cray. Pabst hashtag tacos migas celiac, literally truffaut bruh. Forage twee big mood, typewriter food truck cray taxidermy tattooed pug poutine.</p>
+            <p>Praxis four loko Brooklyn blue bottle meggings literally. Vinyl bruh banjo deep v, chia adaptogen keytar four loko knausgaard solarpunk fixie bushwick. Freegan gochujang jawn vexillologist. Gorpcore taiyaki disrupt, small batch craft beer sartorial blue bottle keytar shaman you probably haven't heard of them. Helvetica chillwave next level XOXO keffiyeh ascot.</p>
+        </div>
+        <div class="my-auto"></div>
+        <div class="px-4 py-2">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl">Like</button> <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl">Link</button>
+        </div>
+    </div>
+</div>
+
+{{template "footer"}}

@@ -1,0 +1,14 @@
+{
+  "name": "service-design",
+  "version": "1.0.0",
+  "description": "A template repository for creating tsnet services that \"feel like Tailscale\".",
+  "scripts": {
+    "start:css": "tailwindcss --minify --watch -o static/css/base.css",
+    "build:css": "tailwindcss --minify -o static/css/base.css"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwindcss": "^3.3.3"
+  }
+}
