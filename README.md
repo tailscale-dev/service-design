@@ -34,6 +34,8 @@ Some other things to consider:
   service without having to install Node.js and Tailwind.
 - Make your service one word. This makes it easier to use in URLs and
   documentation, not to mention pronouncing it.
+- Try [Alpine.js](http://alpinejs.dev/) or [HTMX](https://htmx.org/) for
+  client-side interactivity.
 
 ## Optional parts
 
